@@ -15,11 +15,11 @@ const Home =() =>{
     return(
     <>
      <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
-     <div className={`container ${menuOpen ? 'nav-open' : ''}`} >
+     <div className={`container ${menuOpen ? 'nav-open' : ''}`}  >
         <StartButton />
      </div>  
-     <StartButton /> <StartButton />
     
+     <StartButton /><StartButton /><StartButton /><StartButton /><StartButton /><StartButton />
     </>
     );
 };

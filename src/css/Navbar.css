@@ -20,14 +20,12 @@
     font-size: 36px;
     font-weight: bold;
     font-family: "Cooper black", sans-serif;
-    /* color: var(--primary-color);
-    color: var(--nav-text); */
-   
-    
-  line-height: 40px;
+    /* color: var(--primary-color);*/
+    color: var(--nav-text); 
+    line-height: 40px;
 }
 .nav-logo a{
-    color: rgb(255, 255, 255);
+    color: var(--nav-text);
 }
 
 /* Links */
@@ -63,6 +61,10 @@
         display: block;
         color: var(--nav-text);
         z-index: 1100;
+    }
+
+    .nav {
+        margin-left: 29%;
     }
 
     .nav-links {

@@ -18,7 +18,7 @@ const Navbar = ({ toggleMenu, menuOpen }) => {
 //   };
 
   return (<>
-    <nav className={`nav`}>
+    <nav className='nav' data-aos="fade-down" data-aos-delay="300">
 
       <div className="nav-logo"> <Link style={{ textDecoration: 'none' }} to="/">ScanMe.</Link> 
       </div>

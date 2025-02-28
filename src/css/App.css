@@ -1,56 +1,53 @@
 /* Default Light Mode */
 :root {
-  --bg-gradient-start: #c0d6ff;
-  --bg-gradient-end: #f0f4ff;
-  --grid-color: rgba(200, 200, 200, 0.2);
-  --nav-text: #333;
-  --start-text:black;
+  --nav-text: #1b1a1a;
+  --start-text: black;
+  --bg-image: url("../../public/bg-white.png");
+  --btn-bg: transparent;
+    --btn-text: black;
+    --btn-border: black;
 }
 
 /* Dark Mode */
 body.dark-mode {
-  --bg-gradient-start: #421F3F;
-  --bg-gradient-end: #2A102B;
-  --grid-color: rgba(150, 50, 100, 0.3);
   --nav-text: #ffffff;
-  --start-text:white;
-  /* --nav-bg-mob:grey; */
+  --start-text: white;
+  --bg-image: url("../../public/bg-dark.png");
+  --btn-bg: transparent;
+    --btn-text: white;
+    --btn-border: white;
 }
 
-/* Apply Gradient & Grid */
+/* Apply Background Image Responsively */
 body {
-  background: linear-gradient(to right, var(--bg-gradient-start), var(--bg-gradient-end));
-  position: relative;
+  box-sizing: border-box;
+  background: var(--bg-image) no-repeat center center / cover;
   min-height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+   
 }
 
-/* Grid Overlay */
-body::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 90%;
-  width: 400px; /* Adjust size of the circle */
-  height: 200px;
-  transform: translate(-80%, -50%);
-  background-image: 
-    linear-gradient(var(--grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 60px 60px;
-  opacity: 0.2;
-  pointer-events: none;
+/* Fix Background Scroll Issues */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: top;
+  }
 }
+
 
 .theme-toggle {
   position: absolute; /* Make sure it's positioned relative to the navbar */
-  top: 23px; /* Align properly with navbar */
+  top: 17px; /* Align properly with navbar */
   right: 20px; /* Adjust right spacing */
   width: 54px; /* Square box */
   height: 40px; /* Square box */
   display: flex;
+  border: none;
   justify-content: center;
   align-items: center;
   background: var(--nav-bg); /* Background same as navbar */
