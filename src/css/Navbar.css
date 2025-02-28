@@ -56,16 +56,14 @@
 }
 
 /* Responsive Navbar */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .menu-icon {
         display: block;
         color: var(--nav-text);
         z-index: 1100;
     }
 
-    .nav {
-        margin-left: 29%;
-    }
+    
 
     .nav-links {
         position: absolute;

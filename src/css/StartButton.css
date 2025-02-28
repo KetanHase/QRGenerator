@@ -3,7 +3,7 @@
     padding: 50px;
     color: var(--start-text);
     margin-top: 90px;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     z-index: 1000;
 }
 
@@ -68,7 +68,7 @@ button:hover {
 @media (max-width: 768px) {
     .start-button-section {
         margin-top: 50%;
-         margin-left: 30%;
+         /* margin-left: 30%; */
         padding: 20px;
         z-index: 1100;
     }
