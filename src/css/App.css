@@ -1,0 +1,70 @@
+/* Default Light Mode */
+:root {
+  --bg-gradient-start: #c0d6ff;
+  --bg-gradient-end: #f0f4ff;
+  --grid-color: rgba(200, 200, 200, 0.2);
+  --nav-text: #333;
+  --start-text:black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --bg-gradient-start: #421F3F;
+  --bg-gradient-end: #2A102B;
+  --grid-color: rgba(150, 50, 100, 0.3);
+  --nav-text: #ffffff;
+  --start-text:white;
+  /* --nav-bg-mob:grey; */
+}
+
+/* Apply Gradient & Grid */
+body {
+  background: linear-gradient(to right, var(--bg-gradient-start), var(--bg-gradient-end));
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+/* Grid Overlay */
+body::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  width: 400px; /* Adjust size of the circle */
+  height: 200px;
+  transform: translate(-80%, -50%);
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.theme-toggle {
+  position: absolute; /* Make sure it's positioned relative to the navbar */
+  top: 23px; /* Align properly with navbar */
+  right: 20px; /* Adjust right spacing */
+  width: 54px; /* Square box */
+  height: 40px; /* Square box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--nav-bg); /* Background same as navbar */
+ 
+  cursor: pointer;
+  font-size: 50px;
+  color: var(--nav-text);
+  z-index: 1100; /* Ensure it's always above content */
+  transition: background 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+  background: var(--primary-color); /* Highlight on hover */
+  /* color: white; */
+}
+
+ 
