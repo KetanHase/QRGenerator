@@ -1,0 +1,83 @@
+/* General Layout */
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background:transparent;
+    color: whitesmoke;
+     
+  }
+  
+  /* Left Section */
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Box Styling */
+  .box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 30px;
+    width: 700px;
+  }
+  
+  /* Highlight Text */
+  .highlight {
+    color: #4fc3f7;
+    font-weight: bold;
+  }
+  
+  /* Tech Stack Section */
+  .tech-box {
+    width: 350px;
+    max-height: 650px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .categories h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .categories img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    filter: brightness(0.8);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .categories img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tech-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .box {
+      padding: 30px;
+      margin: 15px;
+      width: 100%;
+    }
+
+    .tech-box {
+        padding: 25px;
+        margin: 5px 5px 30px 30px;
+        align-items: center;
+      }
+
+  }
+  
