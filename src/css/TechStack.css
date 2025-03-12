@@ -99,21 +99,4 @@
       }
 
   }
-  @media(min-width:769px){
-    .tech-container {
- 
-      align-items: center;
-    }
-
-    .box {
-      padding: 40px;
-      margin: 20px;
-      width: 100%;
-    }
-    .tech-box {
-      width: 100%;
-      max-height: 650px;
-    }
-     
-  }
-  
+   
