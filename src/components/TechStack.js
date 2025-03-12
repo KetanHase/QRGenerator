@@ -48,16 +48,22 @@ const TechStack = () => {
           <div>
             <h3>Frontend</h3>
             <img src={htmlIcon} alt="HTML" />
+            <img src={htmlIcon} alt="HTML" />
+            <img src={htmlIcon} alt="HTML" />
+            <img src={htmlIcon} alt="HTML" />
+            <img src={htmlIcon} alt="HTML" />
             {/* <img src={cssIcon} alt="CSS" />
             <img src={reactIcon} alt="React" /> */}
           </div>
           <div>
             <h3>Backend</h3>
+            <img src={htmlIcon} alt="HTML" />
             {/* <img src={flaskIcon} alt="Flask" />
             <img src={pythonIcon} alt="Python" /> */}
           </div>
           <div>
             <h3>Deployment Tools</h3>
+            <img src={htmlIcon} alt="HTML" />
             {/* <img src={netlifyIcon} alt="Netlify" />
             <img src={renderIcon} alt="Render" />
             <img src={githubIcon} alt="GitHub" /> */}

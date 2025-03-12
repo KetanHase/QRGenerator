@@ -30,7 +30,7 @@ const Navbar = ({ toggleMenu, menuOpen }) => {
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         <Link to="/"  >Home</Link>
         <Link to="/about"  >About</Link>
-        <Link href="#feedback"  >Feedback</Link>
+        <Link to="/feedback" >Feedback</Link>
          
       </div>
 

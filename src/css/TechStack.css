@@ -20,12 +20,26 @@
   /* Box Styling */
   .box {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.795);
     padding: 20px;
     border-radius: 30px;
     width: 700px;
+    
   }
   
+  .box h2 {
+    font-weight: 700 ;
+    color: var(--tech-text);
+  }
+
+  .box p{
+    font-weight: 300;
+    color: var(--tech-text);
+  }
+  .box ul li{
+    font-weight: 300;
+    color: var(--tech-text);
+  }
   /* Highlight Text */
   .highlight {
     color: #4fc3f7;
@@ -34,7 +48,7 @@
   
   /* Tech Stack Section */
   .tech-box {
-    width: 350px;
+    width: 300px;
     max-height: 650px;
   }
   
@@ -62,7 +76,7 @@
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 768px)  {
     .tech-container {
       flex-direction: column;
       align-items: center;
@@ -78,6 +92,28 @@
         margin: 5px 5px 30px 30px;
         align-items: center;
       }
+      .categories {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
 
+  }
+  @media(min-width:769px){
+    .tech-container {
+ 
+      align-items: center;
+    }
+
+    .box {
+      padding: 40px;
+      margin: 20px;
+      width: 100%;
+    }
+    .tech-box {
+      width: 100%;
+      max-height: 650px;
+    }
+     
   }
   

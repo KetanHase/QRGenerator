@@ -6,6 +6,7 @@
   --btn-bg: transparent;
     --btn-text: black;
     --btn-border: black;
+    --tech-text:#000000;
 }
 
 /* Dark Mode */
@@ -16,6 +17,7 @@ body.dark-mode {
   --btn-bg: transparent;
     --btn-text: white;
     --btn-border: white;
+    --tech-text:#FFFFFF;
 }
 
 /* Apply Background Image Responsively */
