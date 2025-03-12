@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/TechStack.css";
+import '../css/Navbar.css';
 import canvaIcon from "../assets/img/canva.png"; // Add your icons in assets folder
 // import figmaIcon from "../assets/figma.png";
  import htmlIcon from "../assets/img/html.png";
@@ -19,7 +20,7 @@ const TechStack = () => {
         <div className="box">
           <h2>About This Project</h2>
           <p>
-            This is a <span className="highlight">QR Code Generator</span> that allows users to convert text, numbers, and URLs into QR codes that never expire! Whether you need a QR code for personal, business, or marketing use, this tool makes sharing easy.
+            This is a <span className="highlight">QR Code Generator</span> allows users to convert text, numbers, and URLs into QR codes that never expire! Whether you need a QR code for personal, business, or marketing use. Share information effortlessly with scannable QR codes that are easy to use and compatible with all devices.
           </p>
         </div>
         <div className="box">
@@ -42,8 +43,14 @@ const TechStack = () => {
           <div>
             <h3>UI/UX</h3>
              <img src={canvaIcon} alt="Canva" />
+             <img src={canvaIcon} alt="Canva" />
+             <img src={canvaIcon} alt="Canva" />
+             <img src={canvaIcon} alt="Canva" />
+             <img src={canvaIcon} alt="Canva" />
+              
+             
             {/*<img src={figmaIcon} alt="Figma" /> */}
-          </div>
+          </div><br />
            
           <div>
             <h3>Frontend</h3>
@@ -52,11 +59,13 @@ const TechStack = () => {
             <img src={htmlIcon} alt="HTML" />
             <img src={htmlIcon} alt="HTML" />
             <img src={htmlIcon} alt="HTML" />
+             
             {/* <img src={cssIcon} alt="CSS" />
             <img src={reactIcon} alt="React" /> */}
-          </div>
+          </div><br />
           <div>
             <h3>Backend</h3>
+            <img src={htmlIcon} alt="HTML" />
             <img src={htmlIcon} alt="HTML" />
             {/* <img src={flaskIcon} alt="Flask" />
             <img src={pythonIcon} alt="Python" /> */}

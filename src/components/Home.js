@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import StartButton from "./StartButton";
-import '../css/Navbar.css'
+import '../css/Navbar.css';
  
  
  

@@ -7,6 +7,7 @@
     padding: 20px;
     background:transparent;
     color: whitesmoke;
+    margin-top: 20%;
      
   }
   
@@ -22,8 +23,8 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.795);
     padding: 20px;
-    border-radius: 30px;
-    width: 700px;
+    border-radius: 26px;
+    width: 620px;
     
   }
   
@@ -48,14 +49,14 @@
   
   /* Tech Stack Section */
   .tech-box {
-    width: 300px;
+    width: 350px;
     max-height: 650px;
   }
   
   .categories {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
   }
   
   .categories h3 {
@@ -64,7 +65,7 @@
   }
   
   .categories img {
-    width: 40px;
+    width: 37px;
     height: 40px;
     margin-right: 10px;
     filter: brightness(0.8);
@@ -76,27 +77,57 @@
   }
   
   /* Responsive */
-  @media (max-width: 768px)  {
+   
+  @media (max-width: 1024px) {
     .tech-container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .left-section {
+        width: 100%;
+        min-width: auto;
+    }
+
     .box {
-      padding: 30px;
-      margin: 15px;
-      width: 100%;
+        /* width: 95%; */
+        width: 450px;
+        margin: auto  ;
+    }
+    .box h2 {
+      /* font-weight: 100 ; */
+      font-size: 1.125rem;
+      color: var(--tech-text);
+    }
+  
+    .box p{
+      font-weight: 150;
+      color: var(--tech-text);
+    }
+    .box ul li{
+      font-weight: 150;
+      color: var(--tech-text);
+    }
+    /* Highlight Text */
+    .highlight {
+      color: #4fc3f7;
+      font-weight: bold;
     }
 
     .tech-box {
-        padding: 25px;
-        margin: 5px 5px 30px 30px;
-        align-items: center;
-      }
-      .categories {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
+        width: 100%;
+        max-width: 700px;
+        margin-top: 20px;
+    }
 
-  }
-   
+    .categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categories img {
+        margin: 5px;
+    }
+}
