@@ -13,7 +13,7 @@ const ThemeToggle = () => {
   return (
     
     <button className="theme-toggle" onClick={toggleDarkMode}>
-    {darkMode ? <FaSun /> : <FaMoon />}
+    {darkMode ? <FaMoon /> : <FaSun /> }
   </button>
   );
 };
