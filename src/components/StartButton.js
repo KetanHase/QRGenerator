@@ -63,7 +63,7 @@ const StartButton = () => {
 
            </div>
           <button  onClick={downloadQRCode} >Download QR Code</button>
-          <Link to='/' onClick={ refreshPage} style={{ textDecoration: "none" }}><button style={{fontSize:15}} >Create new one</button></Link>
+          <Link to='/generates' onClick={ refreshPage} style={{ textDecoration: "none" }}><button style={{fontSize:15}} >Create new one</button></Link>
     </div>
      )}
     
