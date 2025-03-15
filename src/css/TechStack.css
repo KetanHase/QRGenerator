@@ -7,15 +7,17 @@
     padding: 20px;
     background:transparent;
     color: whitesmoke;
-    margin-top: 20%;
+    
      
   }
+ 
   
   /* Left Section */
   .left-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
   }
   
   /* Box Styling */
@@ -24,12 +26,14 @@
     border: 1px solid rgba(255, 255, 255, 0.795);
     padding: 20px;
     border-radius: 26px;
-    width: 620px;
-    
+    /* width: 620px; */
+    max-width: 650px;
+    width: 90%;
   }
   
   .box h2 {
     font-weight: 700 ;
+    text-align: left;
     color: var(--tech-text);
   }
 
@@ -50,7 +54,7 @@
   /* Tech Stack Section */
   .tech-box {
     width: 350px;
-    max-height: 650px;
+   max-height: 630px;
   }
   
   .categories {
@@ -58,15 +62,24 @@
     flex-direction: column;
     gap: 13px;
   }
+
+  .category-row {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers icons properly */
+    flex-wrap: wrap; /* Ensures proper wrapping */
+    gap: 12px; /* Adjusts space between icons */
+    min-height: 50px; /* Adds minimum height to prevent space collapse */
+}
   
   .categories h3 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 5px;
   }
   
   .categories img {
-    width: 37px;
-    height: 40px;
+    width: 35px;
+    height: 38px;
     margin-right: 10px;
     filter: brightness(0.8);
     transition: transform 0.2s ease-in-out;
@@ -82,52 +95,47 @@
     .tech-container {
         flex-direction: column;
         align-items: center;
+        transition: margin-top 0.3s ease-in-out;
+        margin-top: 10%;
     }
 
-    .left-section {
-        width: 100%;
-        min-width: auto;
+    .tech-container.nav-open {
+      margin-top: 30%; /* Increase margin when nav is open */
     }
-
     .box {
-        /* width: 95%; */
-        width: 450px;
-        margin: auto  ;
-    }
-    .box h2 {
-      /* font-weight: 100 ; */
-      font-size: 1.125rem;
-      color: var(--tech-text);
-    }
-  
-    .box p{
-      font-weight: 150;
-      color: var(--tech-text);
-    }
-    .box ul li{
-      font-weight: 150;
-      color: var(--tech-text);
-    }
-    /* Highlight Text */
-    .highlight {
-      color: #4fc3f7;
-      font-weight: bold;
-    }
-
-    .tech-box {
-        width: 100%;
-        max-width: 700px;
-        margin-top: 20px;
-    }
-
-    .categories {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .categories img {
-        margin: 5px;
-    }
+      max-width: 100%;
+      width: 100%; /* Adjust width dynamically */
+  }
+     
 }
+@media (max-width: 768px) {
+  .box {
+       padding: 15px;
+      border-radius: 20px;
+       
+  }
+
+  .box h2 {
+      font-size: 1rem;
+  }
+
+  .box p,
+  .box ul li {
+      font-size: 0.65rem;
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    padding: 12px;
+    width: 100%;
+}
+
+.box h2 {
+    font-size: 1rem;
+}
+
+.box p, .box ul li {
+    font-size: 0.7rem;
+}
+}
+ 

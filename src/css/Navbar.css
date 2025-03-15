@@ -102,14 +102,5 @@
         /* color: white; */
     }
 
-    .container {
-        margin-top: -35%; /*Default when navbar is closed */
-        padding: 20px;
-        transition: margin-top 0.3s ease-in-out;
-    }
-    
-    .container.nav-open {
-        margin-top: -30px; /* Moves content down when navbar is open */
-    }
-    
+  
 }

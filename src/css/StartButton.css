@@ -2,8 +2,8 @@
     text-align: center;
     padding: 50px;
     color: var(--start-text);
-    margin-top: 90px;
-    margin-left: 20%;
+     
+    margin-left: 5%;
     z-index: 1000;
 }
 
@@ -36,7 +36,7 @@
     padding: 20px;
 }
 
-input {
+.inputtext {
     width: 320px;
     padding: 12px 16px;
     border: 2px solid var(--btn-border);
@@ -64,6 +64,40 @@ button:hover {
 }
  
 
+.qr-box {
+    margin-top: 20px;
+    padding: 20px;
+    background:none;
+    border: 1px solid ;
+    border-color: var(--qr-border);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px grey;
+    display: inline-block;
+  }
+
+  .qr-box button {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow:  0px 0px 15px 1px rgb(141, 98, 98);
+    
+    
+  }
+  button:hover{
+    color: rgb(73, 73, 72);
+     
+  }
+
+  .qr-box .qr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+    background:white ;
+    box-shadow: 0px 0px 5px 5px rgb(41, 40, 40);
+    /* border: black 1px solid; */
+    border-radius: 17px ;
+  }
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .start-button-section {
@@ -71,7 +105,14 @@ button:hover {
          /* margin-left: 30%; */
         padding: 20px;
         z-index: 1100;
+        transition: margin-top 0.3s ease-in-out;
+         
+        margin-top: 5%;
     }
+ 
+    .start-button-section.nav-open {
+        margin-top: 30%; /* Increase margin when nav is open */
+      }
 
     .start-button-section h1 {
         font-size: 32px;

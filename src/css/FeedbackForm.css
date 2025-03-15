@@ -1,8 +1,6 @@
 .container {
-
-
   width: 100%;
-  margin: 50px 10px 90px 70px;
+  margin: 20px 10px 50px 40px;
   padding: 20px;
   /* border: 1px solid #ccc;
   border-radius: 5px; */
@@ -15,6 +13,7 @@ h2 {
   text-align: center;
   /* color:white; */
   color: var(--feedback-texth3);
+  margin-top: 10px;
 }
 
 form {
@@ -28,9 +27,10 @@ label {
   margin: 10px 0 10px 20px;
   display: flex;
   justify-content: flex-start;
+  color: var(--feedback-label);
 }
 
-input,
+.inputfield,
 textarea,
 select {
   width: 100%;
@@ -39,14 +39,19 @@ select {
   margin-bottom: 15px;
   border: 1px solid;
   border-color: var(--feedback-border);
-  border-radius: 25px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--feedback-select);
+   
+}
+select placeholder {
+  color: #007bff;
 }
 select option {
-  background-color: #444; /* Dark background for options */
+  background-color: #ffffff; /* Dark background for options */
   color: white;
 }
-input:focus,
+.inputfield:focus,
 textarea:focus,
 select:focus {
   border-color: #007bff;
@@ -67,22 +72,29 @@ select:focus {
   font-size: 18px;
   cursor: pointer;
   align-items: center;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+   
 }
 
 .buttonsubmit:hover {
-  /* background-color:#FDC900; */
-  background: linear-gradient(to right, black 50%, blue 50%);
-  background-size: 200% 100%;
-  background-position: left bottom;
+  background-color:#fdca00dc;
    
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    max-width: 450px;
      
-    margin: 15px auto 15px 30px;
+    transition: margin-top 0.3s ease-in-out;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: 15px;
+    padding: 10px;
+     
   }
+
+  .container.nav-open {
+    margin-top: 30%; /* Increase margin when nav is open */
+    
+  }
+
 }

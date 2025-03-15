@@ -7,12 +7,14 @@ const FeedbackForm = () => {
   <>
     <div className="container">
       <h2>Feedback Form</h2>
-      <form>
+      <form data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <label htmlFor="name" aria-label='please fill the field'>Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
+        <input className='inputfield' type="text" id="name" placeholder="Your Name" />
 
         <label htmlFor="email">Email</label>
-        <input type="email" id="email" placeholder="Your Email" />
+        <input className='inputfield' type="email" id="email" placeholder="Your Email" />
 
         <label htmlFor="feedback">Feedback</label>
         <textarea id="feedback" placeholder="Share your thoughts..."></textarea>
@@ -22,14 +24,14 @@ const FeedbackForm = () => {
           <option value="" disabled selected>
             Select Rating
           </option>
-          <option value="5">5 - Excellent</option>
-          <option value="4">4 - Good</option>
-          <option value="3">3 - Average</option>
-          <option value="2">2 - Poor</option>
-          <option value="1">1 - Very Bad</option>
+          <option value="5">⭐⭐⭐⭐⭐-Excellent</option>
+          <option value="4">⭐⭐⭐⭐-Good</option>
+          <option value="3">⭐⭐⭐-Average</option>
+          <option value="2">⭐⭐-Poor</option>
+          <option value="1">⭐-Very Bad</option>
         </select>
 
-        <button className='buttonsubmit' type="submit">Submit Feedback</button>
+        <button className='buttonsubmit' >Submit Feedback</button>
       </form>
     </div>
 

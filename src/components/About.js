@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import TechStack from './TechStack';
 import '../css/Navbar.css';
+import '../css/TechStack.css';
  
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
   return (
   <>
      <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
-      <div className={`container1 ${menuOpen ? "nav-open" : ""}`}>
+      <div className={`tech-container ${menuOpen ? "nav-open" : ""}`}>
         <TechStack />
       </div>
 

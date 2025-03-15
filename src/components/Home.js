@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import StartButton from "./StartButton";
 import '../css/Navbar.css';
+import '../css/StartButton.css';
+ 
  
  
  
@@ -12,14 +14,17 @@ const Home =() =>{
         setMenuOpen(!menuOpen);
       };
      
+     
+
+
     return(
     <>
      <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
-     <div className={`container ${menuOpen ? 'nav-open' : ''}`}  >
+     <div className={`start-button-section  ${menuOpen ? 'nav-open' : ''}`}  >
         <StartButton />
      </div>  
     
-     <StartButton /><StartButton /><StartButton /><StartButton /><StartButton /><StartButton />
+     
     </>
     );
 };

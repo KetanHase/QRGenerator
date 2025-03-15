@@ -9,6 +9,9 @@
     --tech-text:#FFFFFF;
     --feedback-texth3:white;
     --feedback-border:white;
+    --feedback-label:white;
+    --feedback-select:white;
+    --qr-border:white;
 }
 
 /* Dark Mode */
@@ -24,6 +27,9 @@ body.dark-mode {
       --tech-text:#000000;
       --feedback-texth3:black;
       --feedback-border:black;
+      --feedback-label:black;
+      --feedback-select:black;
+      --qr-border:black;
 }
 
 /* Apply Background Image Responsively */

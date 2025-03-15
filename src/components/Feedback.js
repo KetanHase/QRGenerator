@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import Navbar from './Navbar'
-import FeedbackForm from './FeedbackForm'
+import React, { useState } from 'react';
+import Navbar from './Navbar';
+import FeedbackForm from './FeedbackForm';
+import '../css/FeedbackForm.css';
 
 const Feedback = () => {
 
@@ -11,7 +12,7 @@ const Feedback = () => {
     };
   return (<>
   <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
-  <div className={`container1 ${menuOpen ? "nav-open" : ""}`}> 
+  <div className={`container ${menuOpen ? "nav-open" : ""}`}> 
     <FeedbackForm />
     </div>
 
