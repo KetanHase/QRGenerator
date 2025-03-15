@@ -13,6 +13,7 @@ const Main = () => {
     <>
 
    <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen} />
+   <div className={`start-button-section  ${menuOpen ? 'nav-open' : ''}`}  >
    <section className='start-button-section' 
     data-aos="fade-left"
     data-aos-delay="1200"
@@ -24,7 +25,7 @@ const Main = () => {
         data-aos-duration="2000"
         data-aos-easing="ease-in-out">Get Started   &rarr;</button>
         </Link>
-      </section>
+      </section></div>
 
     </>
   )
